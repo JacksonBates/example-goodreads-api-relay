@@ -1,0 +1,11 @@
+{
+  "name": "good-relay",
+  "version": "1.0.0",
+  "description": "a simple backend relay for hitting the GoodReads API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jackson Bates",
+  "license": "MIT"
+}
