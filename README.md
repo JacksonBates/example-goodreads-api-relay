@@ -8,7 +8,7 @@ A simple example node backend that demonstrates how to hit a 3rd party API witho
 
 You need nodejs installed: https://nodejs.org/en/download/
 
-### Get Initialise the App
+### Initialise the App
 
 To get started git clone this repo (choose one depending on whether you prefer https or ssh - pick the first one if you're not sure):
 
