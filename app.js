@@ -3,8 +3,23 @@ require("dotenv").config();
 const express = require("express");
 const fetch = require("node-fetch");
 const convert = require("xml-js");
+const rateLimit = require("express-rate-limit");
 const app = express();
 const port = 3000;
+
+// Rate limiting - Goodreads limits to 1/sec, so we should too
+
+// Enable if you're behind a reverse proxy (Heroku, Bluemix, AWS ELB, Nginx, etc)
+// see https://expressjs.com/en/guide/behind-proxies.html
+// app.set('trust proxy', 1);
+
+const limiter = rateLimit({
+  windowMs: 1000, // 1 second
+  max: 1, // limit each IP to 1 requests per windowMs
+});
+
+//  apply to all requests
+app.use(limiter);
 
 // Routes
 
