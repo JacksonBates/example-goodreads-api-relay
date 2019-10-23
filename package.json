@@ -4,7 +4,9 @@
   "description": "a simple backend relay for hitting the GoodReads API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "debug": "nodemon --inspect app.js"
   },
   "author": "Jackson Bates",
   "license": "MIT",
@@ -14,5 +16,18 @@
     "express-rate-limit": "^5.0.0",
     "node-fetch": "^2.6.0",
     "xml-js": "^1.6.11"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gskumawat0/example-goodreads-api-relay.git"
+  },
+  "keywords": [
+    "secure",
+    "api",
+    "keys"
+  ],
+  "bugs": {
+    "url": "https://github.com/gskumawat0/example-goodreads-api-relay/issues"
+  },
+  "homepage": "https://github.com/gskumawat0/example-goodreads-api-relay#readme"
 }

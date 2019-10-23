@@ -30,6 +30,7 @@ You need to create your own `.env` file for your key:
 
 `cp .env.example .env`
 
+get your goodreads api keys from [Goodreads api](https://www.goodreads.com/api/keys)
 Then open the new `.env` file and paste your keys in the correct spot.
 
 Example:
@@ -54,7 +55,7 @@ I've commented the code heavily to help you understand what is going on if you h
 
 Use [Postman](https://www.getpostman.com/) to test the API.
 
-Set Postman to POST and paste this in the url: `localhost:3000/api/search?q=enders game`
+Set Postman to send a Get request and paste this in the url: `localhost:3000/api/search?q=enders game`
 
 Postman will show you the JSON response below.
 
@@ -63,6 +64,9 @@ Postman will show you the JSON response below.
 This simple app is listening for post requests at `/api/`, so interact with it in your front end app the way you have been previously with the original api.
 
 This is only configured to handle search queries - if you want to use other Goodreads API endpoints / methods, you'll need to think about how you implement them yourself!
+
+## Goodreads search
+see more options for searching at [Goodreads docs](https://www.goodreads.com/api/index#search.books)
 
 ## Hosting
 
