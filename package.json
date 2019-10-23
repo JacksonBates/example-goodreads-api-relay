@@ -29,5 +29,6 @@
   "bugs": {
     "url": "https://github.com/gskumawat0/example-goodreads-api-relay/issues"
   },
-  "homepage": "https://github.com/gskumawat0/example-goodreads-api-relay#readme"
+  "homepage": "https://github.com/gskumawat0/example-goodreads-api-relay#readme",
+  "devDependencies": {}
 }
