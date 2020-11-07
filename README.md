@@ -2,6 +2,8 @@
 
 A simple example node backend that demonstrates how to hit a 3rd party API without exposing your API key in your frontend code.
 
+_Note_ the goodreads API returns XML which is tricky to work with. To see a more simple verison of this, checkout the `weather-json-example` branch. To use that branch you'll need a free API key from Open Weather Map. There is no front-end for it, so you need to interact with it via curl or Postman. The api url is `localhost:3000/onecall?lat={some latitidue}&lon={some longtitude}`.
+
 ## Usage
 
 ### Prerequisites
@@ -66,6 +68,7 @@ This simple app is listening for get requests at `/api/search`, so interact with
 This is only configured to handle search queries - if you want to use other Goodreads API endpoints / methods, you'll need to think about how you implement them yourself!
 
 ## Goodreads search
+
 See more options for searching at [Goodreads docs](https://www.goodreads.com/api/index#search.books)
 
 ## Hosting
